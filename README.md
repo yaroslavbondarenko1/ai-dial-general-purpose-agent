@@ -67,14 +67,14 @@
 
 **ℹ️ In DIAL we name models and applications as deployments**
 
-1. Add to [DIAL core config](core/config.json) dall-e-3 model:
-   - Key is `dall-e-3` with such configurations:
-     - displayName = `DALL-E-3`
-     - endpoint = `http://adapter-dial:5000/openai/deployments/dall-e-3/chat/completions`
+1. Add to [DIAL core config](core/config.json) gpt-image-1.5-2025-12-16 model:
+   - Key is `gpt-image-1.5-2025-12-16` with such configurations:
+     - displayName = `GPT Image 1.5`
+     - endpoint = `http://adapter-dial:5000/openai/deployments/gpt-image-1.5-2025-12-16/chat/completions`
      - iconUrl = `http://localhost:3001/gpt3.svg`
      - type = `chat`
      - upstreams = array with dict of:
-     - endpoint = `https://ai-proxy.lab.epam.com/openai/deployments/dall-e-3/chat/completions`
+     - endpoint = `https://ai-proxy.lab.epam.com/openai/deployments/gpt-image-1.5-2025-12-16/chat/completions`
      - key = {YOUR_DIAL_API_KEY}
 2. Provide implementation for the [tools/deployment/base.py](task/tools/deployment/base.py) according to TODO
 3. Provide implementation for the [image_generation_tool.py](task/tools/deployment/image_generation_tool.py) according to TODO

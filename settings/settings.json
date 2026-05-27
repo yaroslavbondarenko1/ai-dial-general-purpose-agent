@@ -11,5 +11,8 @@
   "encryption": {
     "secret": "salt",
     "key": "password"
+  },
+  "resources": {
+    "compressionMinSize": 1048576
   }
 }
